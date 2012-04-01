@@ -3,5 +3,9 @@
 
     <string name="hello">Hello World, YActivity!</string>
     <string name="app_name">Y</string>
+    <string name="addSign">+</string>
+    <string name="subtractSign">-</string>
+    <string name="div2Sign">/2</string>
+    <string name="setLpSign">lp</string>
 
 </resources>

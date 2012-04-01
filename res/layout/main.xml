@@ -2,11 +2,124 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="horizontal" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
 
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:orientation="vertical" 
+	>
+
+		<EditText
+		    android:id="@+id/lpInput0"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:inputType="number" >
+
+		    <requestFocus />
+		</EditText>
+		<LinearLayout
+		    android:id="@+id/controlsUpper0"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal" 
+		>
+			<Button
+			    android:id="@+id/addButton0"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/addSign"
+			    android:layout_weight="1" 
+			/>
+			<Button
+			    android:id="@+id/subtractButton0"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/subtractSign"
+			    android:layout_weight="1" 
+			/>
+	    </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/controlsLower0"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal" 
+		>
+			<Button
+			    android:id="@+id/setLpButton0"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/setLpSign"
+			    android:layout_weight="1" 
+			/>
+			<Button
+			    android:id="@+id/div2Button0"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/div2Sign"
+			    android:layout_weight="1" 
+			/>
+	    </LinearLayout>
+
+
+	</LinearLayout>
+
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+
+		<EditText
+		    android:id="@+id/lpInput1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:inputType="number" />
+
+		<LinearLayout
+		    android:id="@+id/controlsUpper1"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal" 
+		>
+			<Button
+			    android:id="@+id/subtractButton1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/subtractSign"
+			    android:layout_weight="1" 
+			/>
+			<Button
+			    android:id="@+id/addButton1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/addSign"
+			    android:layout_weight="1" 
+			/>
+	    </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/controlsLower1"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal" 
+		>
+			<Button
+			    android:id="@+id/div2Button1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/div2Sign"
+			    android:layout_weight="1" 
+			/>
+			<Button
+			    android:id="@+id/setLpButton1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/setLpSign"
+			    android:layout_weight="1" 
+			/>
+	    </LinearLayout>
+	</LinearLayout>
 </LinearLayout>
